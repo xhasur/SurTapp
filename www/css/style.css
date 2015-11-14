@@ -1,0 +1,213 @@
+body {
+  color: #353535 !important;
+  font-family: "sofia-pro",arial !important;
+  font-size: 12px ;
+  font-style: normal;
+}
+
+.product{
+  align-content: center;
+
+}
+
+.product-principal{
+
+  width: 45%;
+}
+
+
+.product-caption-title{
+  font-style: normal !important;
+  font-weight: 900;
+  margin-bottom: 8px ;
+  text-transform: uppercase;
+  font-size: 18px !important;
+  font-weight: 900;
+  text-align: center;
+
+}
+
+.product-caption-title-desofer{
+  font-style: normal !important;
+  font-weight: 700;
+  margin-bottom: 4px ;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  font-weight: 900;
+  text-align: center;
+
+}
+
+
+.precio{
+  font-size: 13px;
+  text-align: center !important;
+  line-height: 70%;
+  white-space: pre-line;
+
+}
+
+.precio-desofer{
+  font-size: 12px !important;
+  text-align: center !important;
+  line-height: 100%;
+  white-space: pre-line;
+}
+
+.desc {
+  margin: 10px auto;
+  max-width: 500px;
+  font-size: 13px;
+  text-align: center !important;
+  line-height: 70%;
+  white-space: pre-line;
+  height: auto;
+  margin: 10px auto;
+  max-width: 500px;
+  text-align: center;
+  font-weight: initial;
+  color: #666;
+  font-size: 14px;
+  height: 20px;
+  margin-bottom: 49px !important;
+}
+
+.image-product{
+  align-content: center;
+  max-height: 500px;
+  max-width: 500px;
+  padding: 2px;
+  width: 100%;
+
+
+}
+
+.image-product-destacado{
+  align-content: center;
+  max-height: 400px;
+  max-width: 400px;
+  margin-left: 5%;
+  width: 85%;
+  /*margin-right: 50%;*/
+}
+
+.item.item-stable{
+  padding: 13px 15px !important ;
+}
+
+
+.icon-nav {
+  background: rgba(0, 0, 0, 0) url("../img/icn-sprite.png") no-repeat scroll -398px 0;
+  float: right;
+  height: 20px;
+  transform: rotate3d(0, 0, 1, 0deg);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1) 0.1s;
+  width: 24px;
+}
+
+
+.background-effect-pedidos{
+  background:url("../img/Pedidos.JPG") no-repeat scroll;
+  background-size: 100% 100%;
+  height: 200px;
+}
+
+.background-effect-red-social{
+  background:url("../img/RedSocialTenderos.png") no-repeat scroll;
+  background-size: 100% 100%;
+  height: 200px;
+}
+
+.background-effect-indicadores{
+  background:url("../img/Indicadores_claves.jpg") no-repeat scroll;
+  background-size: 100% 100%;
+  height: 200px;
+}
+
+.title{
+  color: #353535;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  text-transform: uppercase;
+}
+
+
+.item h2{
+
+
+  margin-top: 15px;
+  text-align: center;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 900;
+  color:#000000;
+}
+
+.item p{
+
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.image-list{
+  height: 200px;
+  width: 200px;
+}
+
+
+.image-scroll{
+  height: 200px;
+  width:700px;
+}
+
+.image-scroll-destacado{
+  height: 300px;
+  width:100%;
+}
+
+
+.logo-image{
+  width: 10%;
+  height: 90%;
+}
+
+
+.title-header{
+  padding-left: 25%;
+}
+
+
+.footer-surtiendas{
+  background-color: #353535;
+  height: 20%;
+}
+
+.surtiendas-copyright{
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+.item{
+  padding: 15px; !important;
+}
+
+
+.alignleft {
+  float: left;
+
+}
+.alignright {
+  float: right;
+
+}
+
+
+.background-none{
+ /* height: 200px;*/
+}

@@ -1,0 +1,163 @@
+<ion-view>
+    <ion-nav-bar class="bar-assertive-900 title">
+      <ion-nav-buttons >
+        <img class="logo-image" src="img/LogoAPP.png" ng-click="hacerPedidos()">
+        <p class="title-header">Surtiendas</p>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content >
+            <div class="list">
+               <div>
+                <a ng-click="hacerPedidos()" class="item background-effect-pedidos">
+                    <h2>PEDIDOS</h2>
+                    <p style="color:black">Hacer pedidos</p>
+                </a>
+                </div>
+              <div>
+                <a class="item background-none" ng-click="viewProductsD()">
+                  <h2 >PRODUCTOS DESTACADOS</h2>
+                  <!--
+                  <ion-scroll direction="y"
+                              class="available-scroller image-scroll">
+                    <div collection-repeat="image in allImages">
+                      <img ng-src="{{ image.src }}"
+                           ng-click="viewProducto(image.id)"
+                           class="image-list">
+                      <br>
+                      <ion-checkbox ng-model="isChecked">Comprar</ion-checkbox>
+                    </div>
+                  </ion-scroll>
+                  -->
+                  <ion-list ng-show="principal.varViewProductsD">
+                    <ion-scroll direction="y" class="available-scroller image-scroll-destacado">
+                      <ion-item ng-repeat="image in allImagesDestacados" ng-if="$index%2==0" >
+                                                <div  class="row">
+                                                  <div class="col">
+                                                    <div class="product-principal alignleft" ng-show="allImagesDestacados[$index]" >
+                                                      <!--{{ allImagesDestacados[$index].src}} -->
+                                                      <img ng-src="{{ allImagesDestacados[$index].src }}" ng-click="viewProducto(allImagesDestacados[$index].id[$index])" class="image-product-destacado">
+                                                      <h4 class="product-caption-title-desofer">{{allImagesDestacados[$index].caption}}</h4>
+                                                      <!--<p class="desc">{{allImagesDestacados[$index].desc}}</p>-->
+                                                      <h2 class="precio-desofer">${{ allImagesDestacados[$index].precio}}</h2>
+                                                    </div>
+                                                    <div class="product-principal alignright"  ng-show="allImagesDestacados[$index+1]">
+                                                      <!--{{ allImagesDestacados[$index+1].src}} -->
+                                                      <img ng-src="{{ allImagesDestacados[$index+1].src }}" ng-click="viewProducto(allImagesDestacados[$index+1].id[$index])" class="image-product-destacado">
+                                                      <h4 class="product-caption-title-desofer">{{allImagesDestacados[$index+1].caption}}</h4>
+                                                      <!--<p class="desc">{{allImagesDestacados[$index+1].desc}}</p>-->
+                                                      <h2 class="precio-desofer">${{ allImagesDestacados[$index+1].precio}}</h2>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                        <!--
+                          <div class="product" >
+                             <img ng-src="{{ image.src }}" ng-click="viewProducto(image.id)" class="image-product-destacado">
+                             <h4 class="product-caption-title">{{image.caption}}</h4>
+                             <p class="desc">{{image.desc}}</p>
+                             <h2 class="precio">${{ image.precio }}</h2>
+                          </div>
+                          -->
+                      </ion-item>
+                    </ion-scroll>
+                  </ion-list>
+                </a>
+              </div>
+
+              <div>
+                  <a class="item background-none"  ng-click="viewProductsO()">
+                    <h2>OFERTAS</h2>
+                    <!--
+                    <ion-scroll direction="y"
+                                class="available-scroller image-scroll">
+                      <div collection-repeat="image in allImages">
+                        <img ng-src="{{ image.src }}"
+                             ng-click="viewProducto(image.id)"
+                             class="image-list">
+                        <br>
+                        <ion-checkbox ng-model="isChecked">Comprar</ion-checkbox>
+                      </div>
+                    </ion-scroll>
+                    -->
+                    <ion-list ng-show="principal.varViewProductsO">
+                      <ion-scroll direction="y" class="available-scroller image-scroll-destacado">
+                        <ion-item ng-repeat="image in allImagesOfertas" ng-if="$index%2==0" >
+                          <div  class="row">
+                            <div class="col">
+                              <div class="product-principal alignleft" ng-show="allImagesOfertas[$index]" >
+                                <!--{{ allImagesOfertas[$index].src}} -->
+                                <img ng-src="{{ allImagesOfertas[$index].src }}" ng-click="viewProducto(allImagesOfertas[$index].id[$index])" class="image-product-destacado">
+                                <h4 class="product-caption-title-desofer">{{allImagesOfertas[$index].caption}}</h4>
+                                <!--<p class="desc">{{allImagesOfertas[$index].desc}}</p>-->
+                                <h2 class="precio-desofer">${{ allImagesOfertas[$index].precio}}</h2>
+                              </div>
+                              <div class="product-principal alignright"  ng-show="allImagesOfertas[$index+1]">
+                                <!--{{ allImagesOfertas[$index+1].src}} -->
+                                <img ng-src="{{ allImagesOfertas[$index+1].src }}" ng-click="viewProducto(allImagesOfertas[$index+1].id[$index])" class="image-product-destacado">
+                                <h4 class="product-caption-title-desofer">{{allImagesOfertas[$index+1].caption}}</h4>
+                                <!--<p class="desc">{{allImagesOfertas[$index+1].desc}}</p>-->
+                                <h2 class="precio-desofer">${{ allImagesOfertas[$index+1].precio}}</h2>
+                              </div>
+                            </div>
+                          </div>
+                          <!--
+                            <div class="product" >
+                               <img ng-src="{{ image.src }}" ng-click="viewProducto(image.id)" class="image-product-destacado">
+                               <h4 class="product-caption-title">{{image.caption}}</h4>
+                               <p class="desc">{{image.desc}}</p>
+                               <h2 class="precio">${{ image.precio }}</h2>
+                            </div>
+                            -->
+                        </ion-item>
+                      </ion-scroll>
+                    </ion-list>
+                  </a>
+
+                <!--
+                <a class="item">
+                  <h2>OFERTAS</h2>
+                  <!--
+                  <ion-scroll direction="y"
+                              class="available-scroller image-scroll">
+                    <div collection-repeat="image in allImages">
+                      <img ng-src="{{ image.src }}"
+                           ng-click="viewProducto(image.id)"
+                           class="image-list">
+                      <br>
+                      <ion-checkbox ng-model="isChecked">Comprar</ion-checkbox>
+                    </div>
+                  </ion-scroll>
+
+                 Nuevo..
+
+                  <ion-list>
+                    <ion-scroll direction="y" class="available-scroller image-scroll-destacado">
+                      <ion-item ng-repeat="image in allImagesOfertas">
+                        <div class="product" >
+                          <img ng-src="{{ image.src }}" ng-click="viewProducto(image.id)" class="image-product-destacado">
+                          <h4 class="product-caption-title">{{image.caption}}</h4>
+                          <p class="desc">{{image.desc}}</p>
+                          <h2 class="precio">${{ image.precio }}</h2>
+                        </div>
+                        <br>
+                      </ion-item>
+                    </ion-scroll>
+                  </ion-list>
+                </a>
+                -->
+              </div>
+                <div>
+                    <a class="item background-effect-red-social" >
+                        <h2>INFORMACION </h2>
+                        <p>Informacion de interes</p>
+                    </a>
+                </div>
+                <div>
+                  <a ng-click="indicadores()" class="item background-effect-indicadores" >
+                        <h2>INDICADORES </h2>
+                        <p>Indicadores de su tienda</p>
+                    </a>
+                </div>
+            </div>
+    </ion-content>
+</ion-view>
+

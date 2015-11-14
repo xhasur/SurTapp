@@ -1,0 +1,29 @@
+<ion-view view-title="DESCRIPCION {{pedidosProducto.tipoProducto}}">
+    <ion-nav-bar class="bar-positive-900">
+        <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="image in allImages">
+                <div align="center product" >
+                    <img ng-src="{{ image.src }}" ng-click="viewProducto(image.id)" class="image-product">
+                    <h4 class="product-caption-title">{{image.caption}}</h4>
+                    <p class="desc">{{image.desc}}</p>
+                    <h2 class="precio">${{ image.precio }}</h2>
+                </div>
+              <br>
+                <ion-checkbox ng-model="isChecked">Comprar</ion-checkbox>
+              <!--
+              <div class="list">
+                    <div class="item range range-positive">
+                        <i class="icon ion-ios-minus-outline"></i>
+                        <input type="range" name="volume" min="0" max="100" value="33">
+                        <i class="icon ion-ios-plus-outline"></i>
+                    </div>
+                </div>
+                -->
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+

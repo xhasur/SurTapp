@@ -1,0 +1,16 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.0",
+    "platform.js": "platform#~1.3.0"
+  },
+  "dependencies": {
+    "angular-chart.js": "~0.8.3",
+    "angular-resource": "~1.4.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "bootstrap": "~3.3.5",
+    "Chart.js": "~1.0.2",
+    "angular": "angularjs#~1.4.7"
+  }
+}

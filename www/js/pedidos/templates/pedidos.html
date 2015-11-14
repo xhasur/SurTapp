@@ -1,0 +1,30 @@
+<ion-view view-title="SURTIENDAS">
+    <ion-nav-bar class="bar-positive-900">
+        <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <div ng-repeat="$ in grupos">
+                <ion-item class="item-stable"
+                          ng-click="toggleGroup($)">
+                    <strong >{{$.name}}</strong>
+                  <i class="icon-nav"></i>
+                </ion-item>
+                <ion-item class="item-accordion"
+                          ng-repeat="$$ in $.items"
+                          ng-show="isGroupShown($)"
+                          ng-click="description($$,$)">
+                    <div>{{$$.name}}</div>
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="footer-surtiendas">
+      <h1 class="title">Title!</h1>
+      <div class="surtiendas-copyright">
+        <p>&copy;2015 SURTIENDAS</p>
+        <p>Este sitio web está dirigido a los consumidores de la República de Colombia, Costa Rica, El Salvador, Guatemala, Honduras, Panamá, Nicaragua, Ecuador y Venezuela. Este sitio web no está dirigido a consumidores de otros países.</p>
+      </div>
+    </ion-footer-bar>
+</ion-view>
+

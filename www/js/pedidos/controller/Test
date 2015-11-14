@@ -1,0 +1,72 @@
+<ion-view view-title="SURTIENDAS">
+    <ion-nav-bar class="bar-positive-900">
+        <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <div ng-repeat="$ in grupos">
+                <ion-item class="item-stable"
+                          ng-click="toggleGroup($)"
+                          ng-class="{active: isGroupShown($)}">
+                        <strong>{{$.name}}</strong>
+                </ion-item>
+                <ion-item class="item-accordion"
+                          ng-repeat="$$ in $.items"
+                          ng-show="isGroupShown($)"
+                          ng-click="toggleGroup($$)">
+                    {{$$}}
+                </ion-item>
+                <ion-item class="item-accordion"
+                          ng-repeat="$$$ in $$.items">
+                    {{$$$}}
+                </ion-item>
+                </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+
+
+con
+
+  $scope.grupos =[
+          {
+               "name": "ALIMENTOS",
+               "items": [
+                    {
+                         "name": "Caldos",
+                         "items": [
+                              "caldo1",
+                              "caldo2",
+                              "caldo3"
+                         ]
+                    },
+                   {
+                       "name": "Margarina",
+                       "items": [
+                           "caldo1",
+                           "caldo2",
+                           "caldo3"
+                       ]
+                   },
+                    "Margarina",
+                    "Fruco"
+               ]
+          },
+          {
+               "name": "ASEO",
+               "items": [
+                    "CUIDADO",
+                    "DESODORANTE",
+                    "1-2"
+               ]
+          },
+          {
+               "name": "BEBIDAS",
+               "items": [
+                    "Licores",
+                    "2-1",
+                    "2-2"
+               ]
+          }
+     ]
