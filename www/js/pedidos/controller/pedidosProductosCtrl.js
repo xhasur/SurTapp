@@ -29,6 +29,7 @@ function pedidosProductosCtrl ($ionicModal,
             id:'4',
             src:'img/rollon1.png',
             nombre:"fruco",
+            precio:"1000",
             caption:"ROLL-ON TROPICAL ENERGY",
           desc:"Tropical Energy en aerosol proporciona protección duradera y mayor sensación de frescura durante todo el día"
         },

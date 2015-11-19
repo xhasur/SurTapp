@@ -129,6 +129,12 @@ function principalCtrl ($ionicModal,
     $state.go('indicadores');
   }
 
+  $scope.clickItem=function(){
+
+  }
+
+
+
 }
 
 

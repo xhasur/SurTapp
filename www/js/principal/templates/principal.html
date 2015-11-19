@@ -14,8 +14,8 @@
                 </a>
                 </div>
               <div>
-                <a class="item background-none" ng-click="viewProductsD()">
-                  <h2 >PRODUCTOS DESTACADOS</h2>
+                <a class="item background-none" >
+                  <h2 ng-click="viewProductsD()" >PRODUCTOS DESTACADOS</h2>
                   <!--
                   <ion-scroll direction="y"
                               class="available-scroller image-scroll">
@@ -39,14 +39,54 @@
                                                       <h4 class="product-caption-title-desofer">{{allImagesDestacados[$index].caption}}</h4>
                                                       <!--<p class="desc">{{allImagesDestacados[$index].desc}}</p>-->
                                                       <h2 class="precio-desofer">${{ allImagesDestacados[$index].precio}}</h2>
+
+                                                      <br>
+                                                      <span class="label">Comprar</span>
+                                                      <input class="center-items" placeholder="Cantidad" type="number"
+                                                             style="border: 1px solid #000000;float: left;padding-bottom: 10px;margin-top:20px;width: 60%">
+                                                      <input type="checkbox" class="checkbox-dark"
+                                                             ng-click="clickItem(allImagesDestacados[$index]);
+                                                             $event.stopPropagation();"
+                                                             ng-model="allImagesDestacados[$index].checked">
+
+
+                                                        <!--
+                                                       <ion-checkbox id="allImagesDestacados[{{$index+1}}].isCheckedl"
+                                                        style="padding-right: 25%"
+                                                        ng-model="allImagesDestacados[$index].isChecked"
+                                                        ng-checked=" "
+                                                        class="checkbox-dark alignright">
+                                                      </ion-checkbox>
+                                                      -->
                                                     </div>
+
                                                     <div class="product-principal alignright"  ng-show="allImagesDestacados[$index+1]">
                                                       <!--{{ allImagesDestacados[$index+1].src}} -->
                                                       <img ng-src="{{ allImagesDestacados[$index+1].src }}" ng-click="viewProducto(allImagesDestacados[$index+1].id[$index])" class="image-product-destacado">
                                                       <h4 class="product-caption-title-desofer">{{allImagesDestacados[$index+1].caption}}</h4>
                                                       <!--<p class="desc">{{allImagesDestacados[$index+1].desc}}</p>-->
                                                       <h2 class="precio-desofer">${{ allImagesDestacados[$index+1].precio}}</h2>
+
+                                                      <br>
+                                                      <span class="label">Comprar</span>
+                                                      <input class="center-items" placeholder="Cantidad" type="number"
+                                                             style="border: 1px solid #000000;float: left;padding-bottom: 10px;margin-top:20px;width: 60%">
+                                                      <input type="checkbox" class="checkbox-dark"
+                                                             ng-click="clickItem(allImagesDestacados[$index+1]);
+                                                             $event.stopPropagation();"
+                                                             ng-model="allImagesDestacados[$index+1].checked">
+                                                      <!--
+                                                      <ion-checkbox id="allImagesDestacados[{{$index+1}}].isCheckedr"
+                                                                    style="padding-right: 25%"
+                                                        ng-model="allImagesDestacados[$index+1].isChecked"
+                                                        ng-checked=""
+                                                        class="checkbox-dark alignright">
+                                                      </ion-checkbox>
+                                                      -->
                                                     </div>
+
+                                                    <!-- -->
+
                                                   </div>
                                                 </div>
                         <!--
@@ -64,8 +104,8 @@
               </div>
 
               <div>
-                  <a class="item background-none"  ng-click="viewProductsO()">
-                    <h2>OFERTAS</h2>
+                  <a class="item background-none" >
+                    <h2 ng-click="viewProductsO()">OFERTAS</h2>
                     <!--
                     <ion-scroll direction="y"
                                 class="available-scroller image-scroll">
@@ -89,6 +129,22 @@
                                 <h4 class="product-caption-title-desofer">{{allImagesOfertas[$index].caption}}</h4>
                                 <!--<p class="desc">{{allImagesOfertas[$index].desc}}</p>-->
                                 <h2 class="precio-desofer">${{ allImagesOfertas[$index].precio}}</h2>
+
+                                <br>
+                                <span class="label">Comprar</span>
+                                <input class="center-items" placeholder="Cantidad" type="text"
+                                       style="border: 1px solid #000000;float: left;padding-bottom: 10px;width: 60%">
+                                <input type="checkbox" class="checkbox-dark"
+                                       ng-click="clickItem(allImagesOfertas[$index]);
+                                                             $event.stopPropagation();"
+                                       ng-model="allImagesOfertas[$index].checked">
+                                <!--
+                                <ion-checkbox style="padding-right: 25%"
+                                              ng-model="image.isChecked"
+                                              ng-checked=""
+                                              class="checkbox-dark alignright">
+                                </ion-checkbox>
+                                -->
                               </div>
                               <div class="product-principal alignright"  ng-show="allImagesOfertas[$index+1]">
                                 <!--{{ allImagesOfertas[$index+1].src}} -->
@@ -96,6 +152,23 @@
                                 <h4 class="product-caption-title-desofer">{{allImagesOfertas[$index+1].caption}}</h4>
                                 <!--<p class="desc">{{allImagesOfertas[$index+1].desc}}</p>-->
                                 <h2 class="precio-desofer">${{ allImagesOfertas[$index+1].precio}}</h2>
+
+                                <br>
+                                <span class="label">Comprar</span>
+                                <input class="center-items" placeholder="Cantidad" type="text"
+                                       style="border: 1px solid #000000;float: left;padding-bottom: 10px;width: 60%">
+                                <input type="checkbox" class="checkbox-dark"
+                                       ng-click="clickItem(allImagesOfertas[$index+1]);
+                                                             $event.stopPropagation();"
+                                       ng-model="allImagesOfertas[$index+1].checked">
+                                <!--
+                                <ion-checkbox style="padding-right: 25%"
+                                              ng-model="image.isChecked"
+                                              ng-checked=""
+                                              class="checkbox-dark alignright">
+                                </ion-checkbox>
+-->
+
                               </div>
                             </div>
                           </div>

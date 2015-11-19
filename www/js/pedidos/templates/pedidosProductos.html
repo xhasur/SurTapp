@@ -11,9 +11,16 @@
                     <p class="desc">{{image.desc}}</p>
                     <h2 class="precio">${{ image.precio }}</h2>
                 </div>
-              <br>
-                <ion-checkbox ng-model="isChecked">Comprar</ion-checkbox>
-              <!--
+              <div class="center-items">
+                <span class="label">Comprar</span>
+                <input class="center-items" placeholder="  Cantidad a comprar " type="text" style="border: 1px solid #000000;float: left;padding-bottom: 10px;">
+                <ion-checkbox
+                  ng-model="image.isChecked"
+                  ng-checked=""
+                  class="checkbox-dark alignright">
+                </ion-checkbox>
+              </div>
+ <!--
               <div class="list">
                     <div class="item range range-positive">
                         <i class="icon ion-ios-minus-outline"></i>
