@@ -1,0 +1,47 @@
+/*
+Error: Invalid CSS after "  padding: 15px; ": expected "}", was "!important;"
+        on line 224 of ionic.app.scss
+
+219:   text-align: center;
+220:   color: #FFFFFF;
+221: 
+222: }
+223: .item{
+224:   padding: 15px; !important;
+225: }
+226: 
+227: 
+228: .alignleft {
+229:   float: left;
+
+Backtrace:
+ionic.app.scss:224
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:1165:in `expected'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:1101:in `expected'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:1096:in `tok!'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:643:in `block'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:635:in `ruleset'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:660:in `block_child'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:653:in `block_contents'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:117:in `stylesheet'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/scss/parser.rb:42:in `parse'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/engine.rb:393:in `_to_tree'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `each'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/exec/base.rb:52:in `parse'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/lib/sass/exec/base.rb:19:in `parse!'
+/home/andres/.rvm/gems/ruby-2.1.5/gems/sass-3.4.10/bin/scss:13:in `<top (required)>'
+/home/andres/.rvm/gems/ruby-2.1.5/bin/scss:23:in `load'
+/home/andres/.rvm/gems/ruby-2.1.5/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  padding: 15px; \": expected \"}\", was \"!important;\"\A         on line 224 of ionic.app.scss\A \A 219:   text-align: center;\A 220:   color: #FFFFFF;\A 221: \A 222: }\A 223: .item{\A 224:   padding: 15px; !important;\A 225: }\A 226: \A 227: \A 228: .alignleft {\A 229:   float: left;"; }
